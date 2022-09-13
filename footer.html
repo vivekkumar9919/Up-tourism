@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            background-color: black;
+        }
+
+        #foot1 {
+            height: 100px;
+            width: 100%;
+            background-color: black;
+            /* display: flex;
+            justify-content: center; */
+        }
+        #foot2{
+            border: 3px solid red;
+            width: 100%;
+            height: 100px;
+        }
+        #connect{
+            font-size: 40px;
+            letter-spacing: 1px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #fallow{
+           display: flex;
+           /* border: 2px solid red; */
+           justify-content: center;
+           font-size: 35px;
+           margin-right: 10px;
+        }
+        .fallowitem{
+            margin: 12px;
+        
+            /* border: 2px solid green; */
+            
+        }
+        .fa-instagram{
+            color: red;
+        }
+        .fa-instagram :hover{
+            background-color: red;
+            color: white;
+        }
+        .fa-twitter-square{
+            color: blue;
+           
+        }
+        .fa-youtube-square{
+            color: red;
+        }
+        .fa-facebook-square{
+            color: blue;
+        }
+
+        .fallowitem:hover{
+           transform: scale(1.2);
+        }
+        #copy{
+            font-size: 20px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+        }
+
+        #footimg{
+            margin-bottom: -5px;
+            
+        }
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <footer id="footer" >
+        <img src="footerimg.png" id="footimg" alt="" style="background-size:cover ; margin-left: 80px;">
+        <div id="foot1">
+            <!-- <center id="connect">FOLLOWS US</center><br>
+             <center> <hr style="height: 3px; width: 40% ; background-color: red;"></center> -->
+             <div id="fallow">
+                <a href="#">
+                    <div id="insta" class="fallowitem"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                </a>
+                <a href="#">
+                    <div id="twiter" class="fallowitem"><i class="fa fa-twitter-square" aria-hidden="true"></i></div>
+                </a>
+                <a href="#">
+                    <div id="youtube" class="fallowitem"><i class="fa fa-youtube-square" aria-hidden="true"></i></div>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100037722421926">
+                    <div id="facebook" class="fallowitem"><i class="fa fa-facebook-square" aria-hidden="true"></i></div>
+                </a>
+                <br>      
+           </div>
+           <div id="copy">
+            CopyWrite &copy;Vivek Kumar 2022
+            
+        </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uptourism</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            text-decoration: none;
+            scroll-behavior: smooth;
+        }
+
+        #navbar {
+            border: 2px solid black;
+            padding: 10px;
+            background-color: rgb(68, 65, 65);
+            color: white;
+        }
+
+        #aid,
+        #aid:hover,
+        #aid:focus,
+        #aid:active {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        #navli {
+            padding-right: 50px;
+            font-size: 25px;
+            letter-spacing: 1px;
+            cursor: pointer;
+
+        }
+
+        #navli:hover {
+            color: blue;
+            transform: scale(1.1);
+
+        }
+
+        #loginid {
+            background-color: white;
+            /* text-align: center; */
+            padding: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            color: rgb(237, 7, 7);
+            border-radius: 10px;
+            font-size: 25px;
+        }
+
+
+
+        #welcome {
+
+            font-size: 45px;
+            letter-spacing: 3px;
+        }
+
+        #text1 {
+            font-size: 45px;
+            letter-spacing: 3px;
+        }
+
+        #imgid {
+            /* background-image: url("topimg1.jpg"); */
+            background-image: url("topvid.gif");
+            /* width: 1518px; */
+            background-size: cover;
+            height: 600px;
+            background-repeat: no-repeat;
+
+        }
+
+        #aboutid {
+            /* border: 3px solid black; */
+            background-image: url("glob2.png");
+            /* background-size: cover; */
+            height: 600px;
+            background-repeat: no-repeat;
+            background-size: 40% 90%;
+
+        }
+
+        #discoverid {
+            font-size: 40px;
+            font-family: cursive;
+        }
+
+        #about {
+            /* margin-top: 10px; */
+            font-size: 40px;
+            letter-spacing: 1px;
+
+        }
+
+        #discoverinfo {
+            margin-top: 20px;
+            margin-left: 750px;
+            height: 500px;
+            width: 45%;
+            /* border: 2px solid red; */
+        }
+
+        #dis1 {
+            letter-spacing: 1px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        #infoul1,
+        #infoul2,
+        #infoul3,
+        #dis3_ul {
+            display: flex;
+            list-style: none;
+            margin: 12px;
+        }
+
+        .info1 {
+            width: 300px;
+            margin-right: 12px;
+            padding: 5px;
+            /* border: 2px solid black; */
+            background-color: aliceblue;
+        }
+
+        .dis3_img {
+            height: 200px;
+            width: 250px;
+            margin-left: 10px;
+            /* border: 2px solid red; */
+        }
+
+        .imgclass {
+            height: 200px;
+            width: 200px;
+        }
+
+        .info1 :hover {
+            /* background-color: rgb(207, 233, 255); */
+            background-color: gray;
+            color: white;
+        }
+
+
+        .place {
+            display: inline-flex;
+            margin-left: 200px;
+            margin-top: 50px;
+            margin-bottom: 10px;
+        }
+
+        .cityname {
+            font-size: 30px;
+            color: red;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        #place1_text,
+        #place3_text {
+            margin-right: 150px;
+            font-size: 14px;
+            font-family: cursive;
+        }
+
+        #place2_text,
+        #place4_text {
+            font-size: 14px;
+            font-family: cursive;
+        }
+
+        #ifoot {
+            width: 100%;
+            height: 250px;
+            
+        }
+
+        #up {
+            background-image: url("back1.png");
+
+            background-size: cover;
+            height: 600px;
+            background-repeat: no-repeat;
+        }
+
+        #uptext {
+            font-size: 45px;
+            font-family: cursive;
+            color: red;
+        }
+
+        .upimg {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+        }
+
+        .upimg li:hover {
+            transform: translateY(-20px);
+        }
+
+        #upimg1,
+        #upimg2 {
+            margin-top: 40px;
+        }
+
+        .litext {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* festifval */
+
+        #festid {
+            height: 1000px;
+            /* background-color:rgb(178, 174, 174); */
+            background-color: #eef4fa;
+            background-image: url("back2.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            border: 2px solid white;
+        }
+
+        #festtext {
+            font-size: 40px;
+            margin-top: 200px;
+            font-family: cursive;
+            text-align: center;
+        }
+
+        #tableid {
+            margin-top: 30px;
+            margin-left: 270px;
+            border-spacing: 20px;
+        }
+
+        .row {
+            margin: 15px;
+        }
+
+        .tbdt {
+            border: 2px solid red;
+            width: 200px;
+            height: 50px;
+            cursor: pointer;
+            text-align: center;
+            color: white;
+            font-size: 25px;
+            letter-spacing: 2px;
+        }
+
+        .tbdt:hover {
+            color: black;
+        }
+
+        .tbdt1 {
+            /* position: fixed; */
+            border: 2px solid red;
+            width: 500px;
+            height: 50px;
+            background-image: url("festvid.gif");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #jan {
+            background-image: url("janT.jpg");
+        }
+
+        #feb {
+            background-image: url("febT.jpg");
+        }
+
+        #march {
+            background-image: url("marT.jpg");
+        }
+
+        #april {
+            background-image: url("aprilT.jpg");
+        }
+
+        #may {
+            background-image: url("mayT.jpg");
+        }
+
+        #june {
+            background-image: url("juneT.jpg");
+        }
+
+        #july {
+            background-image: url("julyT.jpg");
+        }
+
+        #aug {
+            background-image: url("augT.jpg");
+        }
+
+        #sept {
+            background-image: url("sepT1.jpg");
+        }
+
+        #oct {
+            background-image: url("octT.jpg");
+        }
+
+        #nov {
+            background-image: url("novT.jpg");
+        }
+
+        #dec {
+            background-image: url("decT.jpg");
+        }
+
+        #jan:hover,
+        #feb:hover,
+        #march:hover,
+        #april:hover,
+        #may:hover,
+        #june:hover,
+        #july:hover,
+        #aug:hover,
+        #sept:hover,
+        #oct:hover,
+        #nov:hover,
+        #dec:hover {
+            background-image: url("");
+        }
+
+        #jan:hover  ~ .tbdt1 {
+            background-image: url("jan1.jpg");
+        }
+        #feb:hover  ~ .tbdt1 {
+            background-image: url("Feb1.jpg");
+        }
+        #march:hover  ~ .tbdt1 {
+            background-image: url("march1.jpg");
+        }
+        #april:hover  ~ .tbdt1 {
+            background-image: url("april1.jpg");
+        }
+        #may:hover  ~ .tbdt1 {
+            background-image: url("may1.jpg");
+        }
+        #june:hover  ~ .tbdt1 {
+            background-image: url("june1.jpg");
+        }
+        #july:hover  ~ .tbdt1 {
+            background-image: url("july.jpg");
+        }
+        #aug:hover  ~ .tbdt1 {
+            background-image: url("aug1.jpg");
+        }
+        #sept:hover  ~ .tbdt1 {
+            background-image: url("sepT1.jpg");
+        }
+        #oct:hover  ~ .tbdt1 {
+            background-image: url("oct1.jpg");
+        }
+        #nov:hover  ~ .tbdt1 {
+            background-image: url("nov1.jpg");
+        }
+        #dec:hover  ~ .tbdt1 {
+            background-image: url("dec1.jpg");
+        }
+
+        .fallowitem{
+            /* margin-bottom: -100px; */
+            
+            font-size: 30px;
+            float: right;
+            position: sticky;
+            bottom: 50px;
+            background-color: black;
+            border-radius: 50px;
+            color: white;
+            margin-bottom: -60px;
+            padding: 5px;
+        }
+
+        /* last section */
+        #lastsection{
+            height: 700px;
+            width: 100%;
+            /* border: 2px solid red; */
+            /* display: inline; */
+            display: flex;
+            justify-content: center;
+            background-image: url("explore\ up.png");
+            /* background-color: violet; */
+           
+
+        }
+
+        #framehead{
+            position: absolute;
+            /* margin-left: 160px; */
+            text-align: center;
+            font-size: 40px;
+            letter-spacing: 1px;
+            font-family: cursive;
+            color: white;
+        }
+
+        #frame1{
+            position: relative;
+            margin-top: 100px;
+            margin-right: 150px;
+            height: 500px;
+            width: 400px;
+            border: 2px solid black;
+        }
+        #frame2{
+            background-color: white;
+            position: relative;
+            margin-top: 100px;
+            height: 500px;
+            width: 400px;
+            border: 2px solid black;
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div id="topid"></div>
+    <nav>
+        <ul style="list-style: None; display: flex; " id="navbar">
+            <li style="padding-right:200px ; font-size: 35px;" id="navli">UP Tourism</li>
+            <li id="navli">Home</li>
+            <li id="navli"><a href="#about" id="aid">About</a></li>
+            <li id="navli"> <a href="#place" id="aid">Places</a></li>
+            <li id="navli"> <a href="#festival" id="aid">Festival</a> </li>
+            <li id="navli"> <a href="#connect" id="aid">Connect us</a></li>
+            <li id="navli"><a href="login.html" id="loginid">Login</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- top image -->
+    <div id="imgid">
+        <!-- <center id="welcome">Welcome </center>
+        <center id="text1"><i>The Heartland of India</i> </center> -->
+        <!-- <img src="im5.jfif" alt="ok" height="400px" width="100%"> -->
+        <div>
+
+        </div>
+    </div>
+
+
+    <!-- gallary -->
+    <div id="up">
+        <center id="uptext">U.P. Nahi Dekha Toh India Nahi Dekha</center>
+
+        <ul class="upimg" id="upimg1">
+            <li><img src="u-letter.png" alt="">
+                <p class="litext">Unforgettable</p>
+            </li>
+            <li><img src="t-letter.png" alt="">
+                <p class="litext">Tranquil</p>
+            </li>
+            <li><img src="t2-letter.png" alt="">
+                <p class="litext">Timeless</p>
+            </li>
+            <li><img src="a-letter.png" alt="">
+                <p class="litext">Alluring</p>
+            </li>
+            <li><img src="r-letter.png" alt="">
+                <p class="litext">Resplendent</p>
+            </li>
+        </ul>
+
+        <ul class="upimg" id="upimg2">
+            <li><img src="p-letter.png" alt="">
+                <p class="litext">Picturesque</p>
+            </li>
+            <li><img src="r-letter (1).png" alt="">
+                <p class="litext">Rejuvenating</p>
+            </li>
+            <li><img src="a2-letter.png" alt="">
+                <p class="litext">Amazing</p>
+            </li>
+            <li><img src="d-letter.png" alt="">
+                <p class="litext">Divine</p>
+            </li>
+            <li><img src="e-letter.png" alt="">
+                <p class="litext">Enchanting</p>
+            </li>
+            <li><img src="s-letter.png" alt="">
+                <p class="litext">Serene</p>
+            </li>
+            <li><img src="h-letter.png" alt="">
+                <p class="litext">Historical</p>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- about  -->
+    <div id="about"></div>
+    <div id="aboutid">
+        <center id="discoverid">Discover Uttar Pradesh</center>
+
+        <div id="discoverinfo" >
+            <!-- first div -->
+            <div id="dis1">
+                Uttar Pradesh is the most populous state in India with a population of nearly 200 million people. Uttar
+                Pradesh shares its borders with Nepal on the north, the Indian states of Uttarakhand and Himachal
+                Pradesh on the northwest, Haryana, Delhi and Rajasthan on the west, Madhya Pradesh on the south,
+                Chhattisgarh and Jharkhand on the southeast, and Bihar on the east.
+                <br>
+                Uttar Pradesh is a favored tourist destination in India with Taj Mahal, one of the eight Wonders of the
+                World, located in Agra. In 2019, domestic tourist arrivals in the state reached 535.8 million, while
+                foreign tourist arrivals crossed over 4.74 million.
+            </div>
+            <!-- second div -->
+            <div id="dis2">
+                <ul id="infoul1">
+                    <li class="info1">
+                        <p><b>Area: </b> 243,286 km <sup>2</sup></p>
+                    </li>
+                    <li class="info1">
+                        <p><b>Population :</b> 20.42 crores</p>
+                    </li>
+                </ul>
+                <ul id="infoul2">
+                    <li class="info1">
+                        <p><b>GSDP :</b> Rs. 21.74 trillion</p>
+                    </li>
+                    <li class="info1">
+                        <p><b>Tourist arrivals : </b> 535.8 million</p>
+                    </li>
+                </ul>
+                <ul id="infoul3">
+                    <li class="info1">
+                        <p><b>Latitude :</b> 26.850000</p>
+                    </li>
+                    <li class="info1">
+                        <p><b>Longitude :</b> </p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- third div -->
+            <div id="dis3">
+                <ul id="dis3_ul">
+                    <li class="dis3_img"><img src="dis_img1.jpg" class="imgclass" alt="" title="Lucknow"></li>
+                    <li class="dis3_img"><img src="dis_img2.jpg" class="imgclass" alt=""title="Lucknow"></li>
+                    <li class="dis3_img"><img src="dis_img3.jpg" class="imgclass" alt=""title="Lucknow"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <!-- places -->
+    <div id="place"></div>
+    <div id="placeid">
+        <center id="discoverid">Top Destination</center>
+        <center>
+            <hr style="width: 300px; background-color:red ; height: 2px;">
+        </center>
+        <!-- place1 -->
+        <div class="place" id="place1">
+            <div id="place1_img">
+                <img src="agra.jpg" alt="agra img"
+                    style="height:250px ; width: 250px; margin-right: 60px; border-radius: 30px;" title="Agra">
+            </div>
+            <div id="place1_text">
+                <p class="cityname">Agra</p>
+                Located on the banks of <b>River Yamuna </b> in Uttar Pradesh, Agra is a popular tourist destination as
+                it is
+                home to one of the 7 wonders of the world, the Taj Mahal. It is a sneak peek into the architectural
+                history and legacy of the Mughal empire with two other <b>UNESCO World Heritage Sites</b> Agra Fort and
+                Fatehpur Sikri. History, architecture, romance all together create the magic of Agra, and hence, makes
+                for a must-visit for anyone living in or visiting India. <br>
+                Apart from its monuments, Agra has some exciting stuff for foodies. It is as famous for its Petha (a
+                sweet made from pumpkin and flavoured with rose water and saffron) as it is for the Taj Mahal. Agra is
+                also well known for its marble artefacts which are best bought in the Sadar Bazaar or Kinaari Bazaar
+                area.
+            </div>
+        </div>
+        <hr style="width: 60% ; margin-left: 200px;">
+
+        <!-- place2 -->
+        <div class="place" id="place1">
+            <div id="place2_text">
+                <p class="cityname">Varanasi</p>
+                World's oldest living city, Varanasi - also known as <b>Kashi (City of Life)</b> and Benaras, is the
+                <b>spiritual capital of India</b>. It is one of Hinduism's seven holy cities. The old city of Varanasi
+                lies along the western banks of the <b>Ganges</b>, spread across a labyrinth of narrow galis. Be
+                prepared to walk on foot and encounter some holy cows! Temples at almost every turn engulf Varanasi but
+                the <b>Kashi Vishwanath Temple</b> is the most visited and the oldest of the lot. Benaras is known as
+                the city of <b>Lord Shiva</b> for a reason, and rightfully so.
+                <br>
+                Varanasi is considered an <b>auspicious place to die</b>, as it is believed to grant moksha or
+                liberation from the cycle of life and death. Spiritually enlightening, the heart of the city pulsates
+                around the ghats, about 80 of which border the Ganges
+            </div>
+            <div id="place2_img">
+                <img src="varanasi.jpg" alt="varanasi img"
+                    style="height:250px ; width: 250px; margin-left: 50px; margin-right: 150px; border-radius: 30px;" title="Varanasi">
+
+            </div>
+        </div>
+        <hr style="width: 60% ; margin-right: 150px; float: right;">
+
+        <!-- place3 -->
+        <div class="place" id="place1">
+            <div id="place3_img">
+                <img src="vrindavan.jpg" alt="vrindavan img"
+                    style="height:250px ; width: 250px; margin-right: 60px; border-radius: 30px;" title="Vrindavan">
+            </div>
+            <div id="place3_text">
+                <p class="cityname">Vrindavan</p>
+                One of the oldest cities on the banks of <b>Yamuna</b>, Vrindavan is considered to be one of the most
+                important places of <b>pilgrimage </b> for the devotees of Krishna. It is said that Lord Krishna had
+                spent his <b>childhood in Vrindavan</b> . The name of the city has been derived from <b>Vrinda (meaning
+                    basil) and van (meaning grove)</b> which perhaps refer to the two small groves at Nidhivan and Seva
+                Kunj. Since Vrindavan is considered to be a sacred place, a large number of people come here to abandon
+                their worldly life.
+                <br>
+                The city of Vrindavan hosts <b>hundreds of Lord Krishna </b> and Radha temples scattered throughout, the
+                most famous ones being Banke Bihari temple and the world-famous <b>ISKCON temple</b> .
+            </div>
+        </div>
+        <hr style="width: 60% ; margin-left: 200px;">
+
+        <!-- place4 -->
+        <div class="place" id="place1">
+            <div id="place4_text">
+                <p class="cityname">Lucknow</p>
+                The capital and the <b>largest city </b> of Uttar Pradesh, Lucknow, situated on the banks of river
+                <b>Gomti</b>, welcomes you with a heartwarming note of "Muskuraiyein, kyunki aap Lucknow mein hai". A
+                city of <b>kebabs and nawabs</b>, of architecture and history, of literature and culture – that is
+                Lucknow in a nutshell for you. From a slice of rich colonial history to modernized museums, this
+                artistic hub of Awadh region beautifully brings together the opulence of a glittering past and the
+                simplicity of a modern city.
+                <br>
+                Rumi Darwaza, the Mughal Gateway built in the centre of the capital divides Lucknow into 'Old Lucknow'
+                which is ancient, and more crowded, and the 'New Lucknow' which is urban and one of the most planned
+                cities of Asia.
+            </div>
+            <div id="place4_img">
+                <img src="lucknow.jpg" alt="lucknow img"
+                    style="height:250px ; width: 250px; margin-left: 50px; margin-right: 150px; border-radius: 30px;" title="Lucknow">
+            </div>
+        </div>
+        <hr style="width: 60% ; margin-right: 150px; float: right;">
+        <br><br><br>
+
+        <!-- festivial -->
+
+        <div id="festival"></div>
+
+        <div id="festid">
+            <div id="festtext">Festive Seasons of UP</div>
+
+            <table id="tableid">
+                <tr class="row" id="row1">
+                    <td class="tbdt" id="jan">January</td>
+                    <td class="tbdt1" rowspan="6"></td>
+                    <td class="tbdt" id="july">July</td>
+
+
+                </tr>
+                <tr class="row" id="row2">
+                    <td class="tbdt" id="feb">Feburary</td>
+                    <!-- <td class="tbdt1" style="visibility: hidden;"></td> -->
+                    <td class="tbdt" id="aug">August</td>
+
+                </tr>
+                <tr class="row" id="row3">
+                    <td class="tbdt" id="march">March</td>
+                    <!-- <td class="tbdt1" >ok</td> -->
+                    <td class="tbdt" id="sept">September</td>
+
+                </tr>
+                <tr class="row" id="row4">
+                    <td class="tbdt" id="april">April</td>
+                    <!-- <td class="tbdt1" >ok</td> -->
+                    <td class="tbdt" id="oct">October</td>
+
+                </tr>
+
+                <tr class="row" id="row5">
+                    <td class="tbdt" id="may">May</td>
+                    <!-- <td class="tbdt1" >o</td> -->
+                    <td class="tbdt" id="nov">November</td>
+
+                </tr>
+                <tr class="row" id="row6">
+                    <td class="tbdt" id="june">June</td>
+                    <!-- <td class="tbdt1" >o</td> -->
+                    <td class="tbdt" id="dec">December</td>
+
+                </tr>
+            </table>
+            <marquee>
+                <img src="dance1.gif" alt="" >
+                <img src="dance1.gif" alt="" >
+                <img src="dance1.gif" alt="" >
+            </marquee>
+            <!-- <img src="dance1.gif" alt="" > -->
+         
+
+        </div>
+
+    </div>
+
+
+    <div id="lastsection">
+        <center id="framehead">Know More</center>
+
+        <div id="frame1">
+            <iframe src="https://www.holidify.com/state/uttar-pradesh/top-destinations-places-to-visit.html" frameborder="0" style="height:500px ; width: 400px;" ></iframe>
+        </div>
+        <div id="frame2">
+            <iframe src="https://www.tourmyindia.com/states/uttarpradesh/" frameborder="0" style="height: 500px; width: 400px;"></iframe>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- footer -->
+
+
+        <a href="#topid">
+            <div id="arrow" class="fallowitem" ><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
+        </a>
+    
+<div id="connect"></div>
+    <iframe src="footer.html" frameborder="0" id="ifoot"></iframe>
+
+
+
+</body>
+
+</html>

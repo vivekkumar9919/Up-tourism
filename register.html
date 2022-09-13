@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registered</title>
+    <style>
+        body {
+            background-color: cadetblue;
+        }
+
+        #divid1 {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #divid11 {
+            /* display:flex;
+            justify-content: center;
+            align-items: center; */
+            height: 660px;
+            width: 560px;
+            border: 2px solid white;
+            background-color: white;
+    
+
+        }
+
+
+
+        .inp {
+            font-size: 20px;
+            margin: 10px;
+            padding: 10px;
+            margin-left: 50px;
+        }
+
+        #tophead {
+            background-color: blue;
+            text-align: center;
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+
+        #fname,
+        #lname {
+            margin-left: 50px;
+        }
+
+        #email {
+            margin-left: 88px;
+        }
+
+        #ph {
+            margin-left: 14px;
+        }
+
+        #dt {
+            margin-left: 92px;
+        }
+
+        #gen {
+            margin-left: 70px;
+        }
+
+        #pass {
+            margin-left: 57px;
+        }
+
+        #sub,
+        #res {
+            width: 450px;
+            padding: 4px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-size: 20px;
+            background-color: green;
+            border-radius: 6px;
+            cursor: pointer;
+            color: white;
+            letter-spacing: 1px;
+        }
+
+        #sub:hover,
+        #res:hover {
+            background-color: rgb(130, 222, 130);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="divid1">
+        <div id="divid11">
+            <div id="tophead">registration form </div>
+            <!-- <form action="6_day_A12.html"> -->
+            <form action="project.html">
+                <div id="inp1" class="inp">
+                    First Name <input type="text" id="fname" required>
+                </div>
+                <div id="inp2" class="inp">
+                    Last Name <input type="text" id="lname" required>
+                </div>
+                <div id="inp3" class="inp">
+                    Email <input type="email" id="email" required>
+                </div>
+                <div id="inp4" class="inp">
+                    Phone Number <input type="number" id="ph" required>
+                </div>
+                <div id="inp5" class="inp">
+                    DOB <input type="date" id="dt">
+                </div>
+                <div id="inp6" class="inp">
+                    <label for="gen">Gender:</label>
+                    <select id="gen" name="cars">
+                        <option value="audi">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Can not say">Can not say</option>
+                    </select>
+                </div>
+                <div id="inp7" class="inp">
+                    Password <input type="password" name="" id="pass" required>
+                </div>
+                <div id="inp8" class="inp">
+                    <input type="submit" value="Submit" id="sub">
+                </div>
+                <div id="inp9" class="inp">
+                    <input type="reset" value="Reset" id="res">
+                </div>
+
+                <center>
+
+                    <a href="project.html">
+                        <div>Go to home Page</div>
+                    </a>
+                </center>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
